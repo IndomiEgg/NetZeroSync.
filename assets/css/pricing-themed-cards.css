@@ -1,0 +1,317 @@
+/* ========================================
+   PRICING CARDS - THEMED COLORS & ANIMATIONS
+   ======================================== */
+
+/* Bronze Card - Warm Brown/Orange Gradient */
+.pricing-card-bronze {
+  background: linear-gradient(135deg, #cd7f32 0%, #b87333 100%);
+  border: 2px solid #cd7f32;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card-bronze::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: bronzeShine 3s infinite;
+}
+
+@keyframes bronzeShine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.pricing-card-bronze .pricing-title,
+.pricing-card-bronze .pricing-price,
+.pricing-card-bronze .pricing-features li {
+  color: #ffffff;
+}
+
+.pricing-card-bronze .pricing-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+/* Silver Card - Shiny Silver/Gray Gradient */
+.pricing-card-silver {
+  background: linear-gradient(135deg, #c0c0c0 0%, #808080 100%);
+  border: 2px solid #c0c0c0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(192, 192, 192, 0.3);
+}
+
+.pricing-card-silver::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: silverShine 2.5s infinite;
+}
+
+@keyframes silverShine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.pricing-card-silver .pricing-title,
+.pricing-card-silver .pricing-price,
+.pricing-card-silver .pricing-features li {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card-silver .pricing-badge {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+/* Gold Card - Luxurious Gold Gradient */
+.pricing-card-gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+  border: 2px solid #ffd700;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(255, 215, 0, 0.4);
+}
+
+.pricing-card-gold::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: goldShine 2s infinite;
+}
+
+@keyframes goldShine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.pricing-card-gold .pricing-title,
+.pricing-card-gold .pricing-price,
+.pricing-card-gold .pricing-features li {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.pricing-card-gold .pricing-badge {
+  background: rgba(45, 55, 72, 0.9);
+  color: #ffd700;
+  backdrop-filter: blur(10px);
+}
+
+/* Hover Effects untuk semua cards */
+.pricing-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  transform: translateY(-12px) scale(1.02);
+}
+
+.pricing-card-bronze:hover {
+  box-shadow: 0 20px 60px rgba(205, 127, 50, 0.5);
+  border-color: #e89a4d;
+}
+
+.pricing-card-silver:hover {
+  box-shadow: 0 20px 60px rgba(192, 192, 192, 0.6);
+  border-color: #d3d3d3;
+}
+
+.pricing-card-gold:hover {
+  box-shadow: 0 25px 70px rgba(255, 215, 0, 0.6);
+  border-color: #ffed4e;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.pricing-card-bronze {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pricing-card-silver {
+  animation: float 3.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.pricing-card-gold {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Button Styles */
+.pricing-card-bronze .pricing-button {
+  background: #ffffff;
+  color: #cd7f32;
+  transition: all 0.3s ease;
+}
+
+.pricing-card-bronze .pricing-button:hover {
+  background: #cd7f32;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transform: scale(1.05);
+}
+
+.pricing-card-silver .pricing-button {
+  background: #ffffff;
+  color: #808080;
+  transition: all 0.3s ease;
+}
+
+.pricing-card-silver .pricing-button:hover {
+  background: #808080;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transform: scale(1.05);
+}
+
+.pricing-card-gold .pricing-button {
+  background: #2d3748;
+  color: #ffd700;
+  transition: all 0.3s ease;
+}
+
+.pricing-card-gold .pricing-button:hover {
+  background: #ffd700;
+  color: #2d3748;
+  border: 2px solid #2d3748;
+  transform: scale(1.05);
+}
+
+/* Particles Effect */
+.pricing-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  animation: particleFloat 4s infinite ease-in-out;
+  opacity: 0.6;
+}
+
+@keyframes particleFloat {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.3;
+  }
+}
+
+/* Pulse Animation on Load */
+@keyframes pulseScale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pricing-card.pulse {
+  animation: pulseScale 1s ease-out;
+}
+
+/* Glow Effect */
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  pointer-events: none;
+}
+
+.pricing-card:hover::after {
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+}
+
+/* Dark Mode Support */
+.dark .pricing-card-bronze .pricing-title,
+.dark .pricing-card-bronze .pricing-features li {
+  color: #ffffff;
+}
+
+.dark .pricing-card-silver .pricing-title,
+.dark .pricing-card-silver .pricing-features li {
+  color: #ffffff;
+}
+
+.dark .pricing-card-gold .pricing-title,
+.dark .pricing-card-gold .pricing-features li {
+  color: #1a202c;
+}

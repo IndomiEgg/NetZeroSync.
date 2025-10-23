@@ -16,6 +16,7 @@
     <!-- CUSTOM COLOR PALETTE CSS -->
     <link rel="stylesheet" href="assets/css/custom.css" />
     <link rel="stylesheet" href="assets/css/team-animations-ADVANCED.css" />
+    <link rel="stylesheet" href="assets/css/pricing-themed-cards.css" />
 
     <!-- WOW JS -->
     <script src="assets/js/wow.min.js"></script>
@@ -128,6 +129,25 @@
                         style="transition: all 0.3s"
                         >Team</span
                       >
+                    </a>
+                  </li>
+                  <!-- Testimonials Link -->
+                  <li class="group relative">
+                    <a
+                      href="#testimonials"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      Testimonials
+                    </a>
+                  </li>
+
+                  <!-- FAQ Link -->
+                  <li class="group relative">
+                    <a
+                      href="#faq"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 lg:group-hover:text-primary lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      FAQ
                     </a>
                   </li>
                   <li class="relative group">
@@ -442,7 +462,7 @@
                 Real-Time Sync
               </h4>
               <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
-                Instant synchronization across all devices with military-grade
+                Instant synchronization across all devices with blockchain
                 encryption.
               </p>
             </div>
@@ -507,183 +527,330 @@
     </section>
     <!-- ====== Features Section End ====== -->
 
-    <!-- ====== Pricing Section Start ====== -->
+    <!-- ====== Pricing Section (BADGE NO OVERLAP - ABSOLUTE FIX) ====== -->
     <section
       id="pricing"
-      class="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
+      class="relative z-10 overflow-hidden bg-white pb-12 pt-16 dark:bg-dark lg:pb-[70px] lg:pt-[90px]"
     >
-      <div class="container px-4 mx-auto">
-        <div class="flex flex-wrap -mx-4">
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span class="block mb-2 text-lg font-semibold text-primary"
-                >Pricing Plans</span
-              >
+            <div class="mx-auto mb-10 max-w-[520px] text-center">
+              <span class="mb-1 block text-base font-semibold text-primary">
+                Pricing Plans
+              </span>
               <h2
-                class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+                class="mb-2 text-2xl font-bold leading-tight text-dark dark:text-white sm:text-3xl"
               >
                 Awesome Pricing Plan
               </h2>
-              <p class="text-base text-body-color dark:text-dark-6">
+              <p class="text-sm text-body-color dark:text-dark-6">
                 Choose the perfect plan for your sustainable cloud needs.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-wrap justify-center -mx-4">
-          <!-- Starter Plan -->
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+        <div class="-mx-3 flex flex-wrap justify-center gap-y-6">
+          <!-- ===== BRONZE CARD ===== -->
+          <div class="w-full px-3 sm:w-1/2 lg:w-1/4 xl:w-1/5">
             <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="pricing-card pricing-card-bronze relative z-10 mb-6 overflow-hidden rounded-xl px-6 py-8 shadow-xl sm:px-7 sm:py-9"
             >
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-                >Starter</span
-              >
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">25.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
+              <h3 class="pricing-title mb-4 text-2xl font-semibold text-white">
+                Bronze
+              </h3>
+
+              <div class="mb-6">
+                <p
+                  class="pricing-price inline-block text-[34px] font-bold leading-none text-white"
                 >
-                  Per Month
+                  $ 2409
+                </p>
+                <span
+                  class="ml-1 align-baseline text-[13px] font-medium text-white/85"
+                >
+                  / 1 Year
                 </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Up to 1 User
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Free updates
-                  </p>
-                </div>
               </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+
+              <h4 class="mb-3 text-base font-semibold text-white/95">
+                Features
+              </h4>
+
+              <ul class="pricing-features mb-6 space-y-2.5">
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Unlimited Users
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  All UI components
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  1 Year access
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Dedicated support
+                </li>
+              </ul>
+
+              <button
+                class="pricing-button block w-full rounded-md border-2 border-transparent bg-white px-5 py-2.5 text-center text-sm font-medium transition"
               >
                 Purchase Now
-              </a>
+              </button>
             </div>
           </div>
 
-          <!-- Basic Plan (Recommended) -->
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <!-- ===== SILVER CARD (BADGE TIDAK MENUTUPI APAPUN) ===== -->
+          <div class="w-full px-3 sm:w-1/2 lg:w-1/4 xl:w-1/5">
             <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="pricing-card pricing-card-silver relative z-10 mb-6 overflow-hidden rounded-xl px-6 py-8 shadow-xl sm:px-7 sm:py-9"
             >
-              <p
-                class="absolute right-[-50px] top-[60px] inline-block -rotate-90 rounded-bl-md rounded-tl-md bg-primary px-5 py-2 text-base font-medium text-white"
-              >
-                Recommended
-              </p>
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-                >Basic</span
-              >
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">59.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
+              <!-- BADGE - POSISI FINAL: Lebih horizontal, tidak menutupi konten -->
+
+              <h3 class="pricing-title mb-4 text-2xl font-semibold text-white">
+                Silver
+              </h3>
+
+              <div class="mb-6">
+                <p
+                  class="pricing-price inline-block text-[34px] font-bold leading-none text-white"
                 >
-                  Per Month
+                  $ 6023
+                </p>
+                <span
+                  class="ml-1 align-baseline text-[13px] font-medium text-white/90"
+                >
+                  / 3 Year
                 </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Up to 5 Users
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Priority support
-                  </p>
-                </div>
               </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+
+              <h4 class="mb-3 text-base font-semibold text-white">Features</h4>
+
+              <ul class="pricing-features mb-6 space-y-2.5">
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Unlimited Users
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  All UI components
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  3 Years access
+                </li>
+                <li class="flex items-center text-[13px] text-white">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Dedicated support
+                </li>
+              </ul>
+
+              <button
+                class="pricing-button block w-full rounded-md border-2 border-transparent bg-white px-5 py-2.5 text-center text-sm font-medium transition"
               >
                 Purchase Now
-              </a>
+              </button>
             </div>
           </div>
 
-          <!-- Premium Plan -->
-          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <!-- ===== GOLD CARD ===== -->
+          <div class="w-full px-3 sm:w-1/2 lg:w-1/4 xl:w-1/5">
             <div
-              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="pricing-card pricing-card-gold relative z-10 mb-6 overflow-hidden rounded-xl px-6 py-8 shadow-xl sm:px-7 sm:py-9"
             >
-              <span
-                class="block mb-5 text-xl font-medium text-dark dark:text-white"
-                >Premium</span
-              >
-              <h2
-                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
-              >
-                <span class="text-xl font-medium">$</span>
-                <span class="-ml-1 -tracking-[2px]">99.00</span>
-                <span
-                  class="text-base font-normal text-body-color dark:text-dark-6"
+              <h3 class="pricing-title mb-4 text-2xl font-semibold">Gold</h3>
+
+              <div class="mb-6">
+                <p
+                  class="pricing-price inline-block text-[34px] font-bold leading-none"
                 >
-                  Per Month
+                  $ 9034
+                </p>
+                <span
+                  class="ml-1 align-baseline text-[13px] font-medium opacity-80"
+                >
+                  / 5 Year
                 </span>
-              </h2>
-              <div class="mb-[50px]">
-                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
-                  Features
-                </h5>
-                <div class="flex flex-col gap-[14px]">
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Unlimited Users
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    All UI components
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Lifetime access
-                  </p>
-                  <p class="text-base text-body-color dark:text-dark-6">
-                    Dedicated support
-                  </p>
-                </div>
               </div>
-              <a
-                href="javascript:void(0)"
-                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+
+              <h4 class="mb-3 text-base font-semibold">Features</h4>
+
+              <ul class="pricing-features mb-6 space-y-2.5">
+                <li class="flex items-center text-[13px]">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Unlimited Users
+                </li>
+                <li class="flex items-center text-[13px]">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  All UI components
+                </li>
+                <li class="flex items-center text-[13px]">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  5 Years access
+                </li>
+                <li class="flex items-center text-[13px]">
+                  <svg
+                    class="mr-1.5 h-4 w-4 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Dedicated support
+                </li>
+              </ul>
+
+              <button
+                class="pricing-button block w-full rounded-md border-2 border-transparent bg-gray-800 px-5 py-2.5 text-center text-sm font-medium text-yellow-300 transition"
               >
                 Purchase Now
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ====== Pricing Section End ====== -->
+
+    <!-- CSS Override -->
+    <style>
+      /* Paksa ikon checklist tetap 16px */
+      #pricing .pricing-features svg {
+        width: 16px;
+        height: 16px;
+      }
+    </style>
 
     <!-- ====== Team Section Start ====== -->
     <section
@@ -948,6 +1115,759 @@
     </section>
     <!-- ====== Team Section End ====== -->
 
+    <!-- ====== Testimonial Section (WITH SMALLER STARS) ====== -->
+    <section
+      id="testimonials"
+      class="bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
+    >
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+                Testimonials
+              </span>
+              <h2
+                class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]"
+              >
+                What Our Clients Say
+              </h2>
+              <p class="text-base text-body-color dark:text-dark-6">
+                Trusted by companies worldwide for sustainable cloud solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="-mx-4 flex flex-wrap">
+          <!-- Testimonial 1 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp mb-10 rounded-xl bg-gray-1 p-8 shadow-testimonial dark:bg-dark-2 dark:shadow-none"
+              style="transition: all 0.3s ease; cursor: pointer"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(16, 185, 129, 0.2)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow=''"
+              data-wow-delay=".1s"
+            >
+              <div class="mb-5 flex items-center">
+                <div
+                  class="mr-4 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/testi1.jpg"
+                    alt="John Doe"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold text-dark dark:text-white">
+                    Benson Karl
+                  </h5>
+                  <p class="text-sm text-body-color dark:text-dark-6">
+                    CEO, TechCorp
+                  </p>
+                </div>
+              </div>
+              <div class="mb-5 flex items-center">
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="text-base leading-relaxed text-body-color dark:text-dark-6"
+              >
+                "NetZeroSync has transformed our cloud infrastructure. The
+                carbon-neutral approach aligns perfectly with our sustainability
+                goals, and the performance is outstanding."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp mb-10 rounded-xl bg-gray-1 p-8 shadow-testimonial dark:bg-dark-2 dark:shadow-none"
+              style="transition: all 0.3s ease; cursor: pointer"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(16, 185, 129, 0.2)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow=''"
+              data-wow-delay=".15s"
+            >
+              <div class="mb-5 flex items-center">
+                <div
+                  class="mr-4 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/testi2.jpg"
+                    alt="Sarah Miller"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold text-dark dark:text-white">
+                    Sarah Miller
+                  </h5>
+                  <p class="text-sm text-body-color dark:text-dark-6">
+                    CTO, GreenTech
+                  </p>
+                </div>
+              </div>
+              <div class="mb-5 flex items-center">
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="text-base leading-relaxed text-body-color dark:text-dark-6"
+              >
+                "Excellent service! The team is responsive, and the platform is
+                incredibly reliable. We've reduced our carbon footprint by 40%
+                since switching."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp mb-10 rounded-xl bg-gray-1 p-8 shadow-testimonial dark:bg-dark-2 dark:shadow-none"
+              style="transition: all 0.3s ease; cursor: pointer"
+              onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(16, 185, 129, 0.2)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow=''"
+              data-wow-delay=".2s"
+            >
+              <div class="mb-5 flex items-center">
+                <div
+                  class="mr-4 h-[50px] w-[50px] overflow-hidden rounded-full"
+                >
+                  <img
+                    src="assets/images/testimonials/testi3.jpg"
+                    alt="Michael Johnson"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold text-dark dark:text-white">
+                    Kaede Tanaka
+                  </h5>
+                  <p class="text-sm text-body-color dark:text-dark-6">
+                    Director, EcoSolutions
+                  </p>
+                </div>
+              </div>
+              <div class="mb-5 flex items-center">
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="mr-1 h-4 w-4 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="text-base leading-relaxed text-body-color dark:text-dark-6"
+              >
+                "Best decision we made for our infrastructure. NetZeroSync
+                combines sustainability with top-tier performance. Highly
+                recommended!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Testimonial Section End ====== -->
+
+    <!-- ====== FAQ Section (UNIFORM ICON SIZE & 2-LINE TEXT) ====== -->
+    <section
+      id="faq"
+      class="bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]"
+    >
+      <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+                FAQ
+              </span>
+              <h2
+                class="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]"
+              >
+                Frequently Asked Questions
+              </h2>
+              <p class="text-base text-body-color dark:text-dark-6">
+                Find answers to common questions about our services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2">
+            <!-- FAQ Item 1 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".1s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    What makes NetZeroSync<br />carbon-neutral?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  We use 100% renewable energy for our data centers and offset
+                  all carbon emissions through verified carbon credit programs.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".15s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    How secure<br />is my data?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  We use enterprise-grade encryption (AES-256), multi-factor
+                  authentication, and comply with ISO 27001, SOC 2, and GDPR
+                  standards.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".2s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    Can I migrate my<br />existing data?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  Yes! We provide free migration services for all new customers.
+                  Our team ensures zero downtime and data integrity throughout
+                  the process.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <!-- FAQ Item 4 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".1s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    What support plans<br />do you offer?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  24/7 email support for all plans. Premium and Enterprise
+                  customers get priority phone/chat support with dedicated
+                  account managers.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".15s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    Is there a free<br />trial available?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  Yes! 14-day free trial with full access to all features. No
+                  credit card required. Upgrade anytime during or after the
+                  trial.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div
+              class="wow fadeInUp faq-item mb-8 w-full rounded-xl bg-white p-5 shadow-testimonial dark:bg-dark dark:shadow-none"
+              style="transition: all 0.3s ease"
+              data-wow-delay=".2s"
+            >
+              <button
+                class="faq-btn flex w-full items-center justify-between text-left"
+                onclick="toggleFAQ(this)"
+              >
+                <div class="mr-5 flex items-center">
+                  <div
+                    class="mr-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M11 0.5C5.20156 0.5 0.5 5.20156 0.5 11C0.5 16.7984 5.20156 21.5 11 21.5C16.7984 21.5 21.5 16.7984 21.5 11C21.5 5.20156 16.7984 0.5 11 0.5ZM11 19.5C6.30469 19.5 2.5 15.6953 2.5 11C2.5 6.30469 6.30469 2.5 11 2.5C15.6953 2.5 19.5 6.30469 19.5 11C19.5 15.6953 15.6953 19.5 11 19.5Z"
+                      />
+                      <path
+                        d="M10.25 6.5H11.75V12.5H10.25V6.5ZM10.25 14H11.75V15.5H10.25V14Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4
+                    class="text-base font-semibold text-dark dark:text-white leading-tight"
+                  >
+                    Can I cancel my subscription<br />anytime?
+                  </h4>
+                </div>
+                <svg
+                  class="faq-icon shrink-0 fill-primary stroke-primary"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="
+                    transition: transform 0.3s ease;
+                    transform: rotate(0deg);
+                  "
+                >
+                  <path
+                    d="M11 15.125L4.125 8.25L5.5 6.875L11 12.375L16.5 6.875L17.875 8.25L11 15.125Z"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                class="faq-content pl-[68px] pt-4"
+                style="display: none; transition: all 0.3s ease"
+              >
+                <p
+                  class="text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  Absolutely! No long-term contracts. Cancel anytime from your
+                  dashboard. Your data remains accessible for 30 days after
+                  cancellation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== FAQ Section End ====== -->
+
+    <!-- FAQ JavaScript (PASTE BEFORE </body>) -->
+    <script>
+      function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+        const parent = button.closest(".faq-item");
+        const allItems = document.querySelectorAll(".faq-item");
+
+        allItems.forEach((item) => {
+          if (item !== parent) {
+            const otherContent = item.querySelector(".faq-content");
+            const otherIcon = item.querySelector(".faq-icon");
+            otherContent.style.display = "none";
+            otherIcon.style.transform = "rotate(0deg)";
+            item.style.boxShadow = "";
+          }
+        });
+
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "block";
+          icon.style.transform = "rotate(180deg)";
+          parent.style.boxShadow = "0 0 0 2px #10b981";
+        } else {
+          content.style.display = "none";
+          icon.style.transform = "rotate(0deg)";
+          parent.style.boxShadow = "";
+        }
+      }
+    </script>
     <!-- ====== Contact Section Start ====== -->
     <section id="contact" class="relative py-20 md:py-[120px]">
       <div class="container px-4 mx-auto">
@@ -1545,6 +2465,7 @@
       new WOW().init();
     </script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/pricing-animations.js"></script>
     <script src="assets/js/team-animations.js"></script>
   </body>
 </html>
