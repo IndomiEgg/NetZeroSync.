@@ -315,3 +315,43 @@
 .dark .pricing-card-gold .pricing-features li {
   color: #1a202c;
 }
+/* ========================================
+   BADGE POSITION FIX - OVERRIDE TOTAL
+   ======================================== */
+
+/* PAKSA badge ke posisi yang benar - HIGHEST PRIORITY */
+.pricing-card-silver .pricing-badge {
+  position: absolute !important;
+  top: 6px !important;
+  right: -42px !important;
+  transform: rotate(42deg) !important;
+  padding: 6px 50px !important;
+  font-size: 9px !important;
+  z-index: 20 !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(10px) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Alternatif: Pindahkan badge keluar card (solusi paling aman) */
+.pricing-card-silver-wrapper {
+  position: relative;
+}
+
+.pricing-card-silver-wrapper .badge-external {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  background: #10b981;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 30;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
