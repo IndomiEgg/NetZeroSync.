@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetZeroSync | Carbon-Neutral Cloud Platform</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <!-- CUSTOM COLOR PALETTE CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <!-- ====== Navbar Section Start ====== -->
+    <div
+      class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="relative flex items-center justify-between -mx-4">
+          <div class="max-w-full px-4 w-60">
+            <a href="index.html" class="block w-full py-5 navbar-logo">
+              <img
+                src="assets/images/logo/image2vector.svg"
+                alt="NetZeroSync"
+                class="w-full header-logo"
+                style="max-height: 50px; filter: brightness(0) invert(1)"
+              />
+            </a>
+          </div>
+          <div class="flex items-center justify-between w-full px-4">
+            <div>
+              <button
+                id="navbarToggler"
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+              >
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px]"
+                  style="background-color: #ffffff"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px]"
+                  style="background-color: #ffffff"
+                ></span>
+                <span
+                  class="relative my-[6px] block h-[2px] w-[30px]"
+                  style="background-color: #ffffff"
+                ></span>
+              </button>
+              <nav
+                id="navbarCollapse"
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
+              >
+                <ul class="blcok lg:flex 2xl:ml-20">
+                  <li class="relative group">
+                    <a
+                      href="#home"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >Home</span
+                      >
+                    </a>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="#about"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >About</span
+                      >
+                    </a>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="#features"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >Features</span
+                      >
+                    </a>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="#pricing"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >Pricing</span
+                      >
+                    </a>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="#team"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >Team</span
+                      >
+                    </a>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="#contact"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                      style="color: #064e3b"
+                    >
+                      <span
+                        class="lg:text-white lg:hover:opacity-80"
+                        style="transition: all 0.3s"
+                        >Contact</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end gap-4 pr-16 lg:pr-0">
+              <!-- Theme Switcher Button -->
+              <button
+                id="themeSwitcher"
+                aria-label="Toggle theme"
+                title="Toggle Dark/Light Mode"
+                style="
+                  position: relative;
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 50%;
+                  background-color: rgba(255, 255, 255, 0.2);
+                  border: 2px solid rgba(255, 255, 255, 0.3);
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  class="sun-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  style="width: 20px; height: 20px; color: #ffffff"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <svg
+                  class="moon-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  style="
+                    width: 20px;
+                    height: 20px;
+                    color: #ffffff;
+                    display: none;
+                  "
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+              </button>
+
+              <div class="hidden sm:flex">
+                <a
+                  href="signin.html"
+                  class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
+                  >Sign In</a
+                >
+                <a
+                  href="signup.html"
+                  class="px-6 py-2 text-base font-medium text-white duration-300 ease-in-out rounded-md signUpBtn bg-white/20 hover:bg-white/100 hover:text-dark"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Navbar Section End ====== -->
+
+    <!-- ====== Hero Section Start ====== -->
+    <div
+      id="home"
+      class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap items-center -mx-4">
+          <div class="w-full px-4">
+            <div
+              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
+              data-wow-delay=".2s"
+            >
+              <h1
+                class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]"
+              >
+                NetZeroSync: Your Carbon-Neutral Cloud Platform
+              </h1>
+              <p
+                class="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]"
+              >
+                Synchronize your data, minimize your carbon footprint. Built
+                with cutting-edge technology for a sustainable future.
+              </p>
+              <ul
+                class="flex flex-wrap items-center justify-center gap-5 mb-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color"
+                  >
+                    Get Started
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center gap-4 rounded-md bg-white/[0.12] px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
+                  >
+                    Learn More
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full px-4">
+            <div
+              class="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
+              data-wow-delay=".25s"
+            >
+              <div class="mt-16">
+                <img
+                  src="assets/images/hero/hero1.png"
+                  alt="NetZeroSync Dashboard"
+                  class="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== Hero Section End ====== -->
+
+    <!-- ====== About Section Start ====== -->
+    <section id="about" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+      <div class="container px-4 mx-auto">
+        <div class="wow fadeInUp" data-wow-delay=".2s">
+          <div class="-mx-4 flex flex-wrap items-center">
+            <div class="w-full px-4 lg:w-1/2">
+              <div class="mb-12 max-w-[540px] lg:mb-0">
+                <h2
+                  class="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]"
+                >
+                  Sustainable Cloud Solutions
+                </h2>
+                <p
+                  class="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6"
+                >
+                  NetZeroSync provides eco-friendly cloud synchronization
+                  services that help businesses reduce their carbon emissions
+                  while maintaining top-tier performance and security.
+                  <br /><br />
+                  Join thousands of companies committed to digital
+                  sustainability without compromising on speed, reliability, or
+                  data protection.
+                </p>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
+                >
+                  Discover More
+                </a>
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-1/2">
+              <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
+                <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                  <div
+                    class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]"
+                  >
+                    <img
+                      src="https://via.placeholder.com/300x500/10B981/FFFFFF?text=Green+Tech"
+                      alt="about image"
+                      class="object-cover object-center w-full h-full"
+                    />
+                  </div>
+                </div>
+                <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
+                  <div
+                    class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]"
+                  >
+                    <img
+                      src="https://via.placeholder.com/300x310/3B82F6/FFFFFF?text=Cloud+Sync"
+                      alt="about image"
+                      class="object-cover object-center w-full h-full"
+                    />
+                  </div>
+                  <div
+                    class="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8"
+                  >
+                    <div>
+                      <span class="block text-5xl font-extrabold text-white"
+                        >05</span
+                      >
+                      <span class="block text-base font-semibold text-white"
+                        >Years Experience</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About Section End ====== -->
+
+    <!-- ====== Features Section Start ====== -->
+    <section
+      id="features"
+      class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
+              <span class="mb-2 block text-lg font-semibold text-primary"
+                >Features</span
+              >
+              <h2
+                class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+              >
+                Main Features of NetZeroSync
+              </h2>
+              <p class="text-base text-body-color dark:text-dark-6">
+                Experience the power of sustainable technology with our
+                comprehensive feature set.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <div
+                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+              >
+                <span
+                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white"
+                >
+                  <path
+                    d="M30.5 18.5C30.5 25.1274 25.1274 30.5 18.5 30.5C11.8726 30.5 6.5 25.1274 6.5 18.5C6.5 11.8726 11.8726 6.5 18.5 6.5C25.1274 6.5 30.5 11.8726 30.5 18.5Z"
+                  />
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                Zero Carbon Footprint
+              </h4>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                All operations powered by 100% renewable energy with carbon
+                offset.
+              </p>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".15s">
+              <div
+                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+              >
+                <span
+                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white"
+                >
+                  <path
+                    d="M18.5 6.5V18.5L25.5 25.5"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                Real-Time Sync
+              </h4>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                Instant synchronization across all devices with military-grade
+                encryption.
+              </p>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".2s">
+              <div
+                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+              >
+                <span
+                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white"
+                >
+                  <path d="M18.5 8.5L25 15L18.5 21.5L12 15L18.5 8.5Z" />
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                Advanced Analytics
+              </h4>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                Track your carbon savings and data usage with comprehensive
+                dashboards.
+              </p>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".25s">
+              <div
+                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+              >
+                <span
+                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
+                ></span>
+                <svg
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white"
+                >
+                  <circle cx="18.5" cy="18.5" r="10" />
+                </svg>
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                24/7 Support
+              </h4>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                Round-the-clock customer support from sustainability experts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Features Section End ====== -->
+
+    <!-- ====== Pricing Section Start ====== -->
+    <section
+      id="pricing"
+      class="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span class="block mb-2 text-lg font-semibold text-primary"
+                >Pricing Plans</span
+              >
+              <h2
+                class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+              >
+                Awesome Pricing Plan
+              </h2>
+              <p class="text-base text-body-color dark:text-dark-6">
+                Choose the perfect plan for your sustainable cloud needs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center -mx-4">
+          <!-- Starter Plan -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+            >
+              <span
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
+                >Starter</span
+              >
+              <h2
+                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
+              >
+                <span class="text-xl font-medium">$</span>
+                <span class="-ml-1 -tracking-[2px]">25.00</span>
+                <span
+                  class="text-base font-normal text-body-color dark:text-dark-6"
+                >
+                  Per Month
+                </span>
+              </h2>
+              <div class="mb-[50px]">
+                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
+                  Features
+                </h5>
+                <div class="flex flex-col gap-[14px]">
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Up to 1 User
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    All UI components
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Lifetime access
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Free updates
+                  </p>
+                </div>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+              >
+                Purchase Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Basic Plan (Recommended) -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+            >
+              <p
+                class="absolute right-[-50px] top-[60px] inline-block -rotate-90 rounded-bl-md rounded-tl-md bg-primary px-5 py-2 text-base font-medium text-white"
+              >
+                Recommended
+              </p>
+              <span
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
+                >Basic</span
+              >
+              <h2
+                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
+              >
+                <span class="text-xl font-medium">$</span>
+                <span class="-ml-1 -tracking-[2px]">59.00</span>
+                <span
+                  class="text-base font-normal text-body-color dark:text-dark-6"
+                >
+                  Per Month
+                </span>
+              </h2>
+              <div class="mb-[50px]">
+                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
+                  Features
+                </h5>
+                <div class="flex flex-col gap-[14px]">
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Up to 5 Users
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    All UI components
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Lifetime access
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Priority support
+                  </p>
+                </div>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+              >
+                Purchase Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+            >
+              <span
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
+                >Premium</span
+              >
+              <h2
+                class="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
+              >
+                <span class="text-xl font-medium">$</span>
+                <span class="-ml-1 -tracking-[2px]">99.00</span>
+                <span
+                  class="text-base font-normal text-body-color dark:text-dark-6"
+                >
+                  Per Month
+                </span>
+              </h2>
+              <div class="mb-[50px]">
+                <h5 class="mb-5 text-lg font-medium text-dark dark:text-white">
+                  Features
+                </h5>
+                <div class="flex flex-col gap-[14px]">
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Unlimited Users
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    All UI components
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Lifetime access
+                  </p>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    Dedicated support
+                  </p>
+                </div>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
+              >
+                Purchase Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing Section End ====== -->
+
+    <!-- ====== Team Section Start ====== -->
+    <section
+      id="team"
+      class="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[485px] text-center">
+              <span class="block mb-2 text-lg font-semibold text-primary"
+                >Our Team</span
+              >
+              <h2
+                class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+              >
+                Our Creative Team
+              </h2>
+              <p class="text-base text-body-color dark:text-dark-6">
+                Meet the experts behind NetZeroSync's sustainable technology.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center -mx-4">
+          <!-- Team Member 1 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              data-wow-delay=".1s"
+            >
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img
+                  src="https://via.placeholder.com/120/10B981/FFFFFF?text=JD"
+                  alt="team image"
+                  class="h-[120px] w-[120px] rounded-full"
+                />
+                <span
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
+                ></span>
+              </div>
+              <div class="text-center">
+                <h4
+                  class="mb-1 text-lg font-semibold text-dark dark:text-white"
+                >
+                  John Doe
+                </h4>
+                <p class="mb-5 text-sm text-body-color dark:text-dark-6">
+                  CEO & Founder
+                </p>
+                <div class="flex items-center justify-center gap-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M16.4647 4.83752C16.565 4.72065 16.4343 4.56793 16.2859 4.62263C15.9549 4.74474 15.6523 4.82528 15.2049 4.875C15.7552 4.56855 16.0112 4.13054 16.2194 3.59407C16.2696 3.46467 16.1182 3.34725 15.9877 3.40907C15.458 3.66023 14.8864 3.84658 14.2854 3.95668C13.6913 3.3679 12.8445 3 11.9077 3C10.1089 3 8.65027 4.35658 8.65027 6.02938C8.65027 6.26686 8.67937 6.49818 8.73427 6.71966C6.14854 6.59919 3.84286 5.49307 2.24098 3.79696C2.13119 3.68071 1.93197 3.69614 1.86361 3.83792C1.68124 4.21619 1.57957 4.63582 1.57957 5.07762C1.57957 6.12843 2.15446 7.05557 3.02837 7.59885C2.63653 7.58707 2.2618 7.51073 1.91647 7.38116C1.74834 7.31808 1.5556 7.42893 1.57819 7.59847C1.75162 8.9004 2.80568 9.97447 4.16624 10.2283C3.89302 10.2978 3.60524 10.3347 3.30754 10.3347C3.23536 10.3347 3.16381 10.3324 3.0929 10.3281C2.91247 10.3169 2.76583 10.4783 2.84319 10.6328C3.35357 11.6514 4.45563 12.3625 5.73809 12.3847C4.62337 13.1974 3.21889 13.6816 1.69269 13.6816C1.50451 13.6816 1.42378 13.9235 1.59073 14.0056C2.88015 14.6394 4.34854 15 5.90878 15C11.9005 15 15.1765 10.384 15.1765 6.38067C15.1765 6.24963 15.1732 6.11858 15.1672 5.98877C15.6535 5.66205 16.0907 5.27354 16.4647 4.83752Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M13.9092 3H4.63636C3.73309 3 3 3.73309 3 4.63636V13.9092C3 14.8125 3.73309 15.5456 4.63636 15.5456H13.9092C14.8125 15.5456 15.5456 14.8125 15.5456 13.9092V4.63636C15.5456 3.73309 14.8125 3 13.9092 3ZM6.54545 13.0909H5.09091V7.36364H6.54545V13.0909ZM5.81818 6.71818C5.29091 6.71818 4.86364 6.29091 4.86364 5.76364C4.86364 5.23636 5.29091 4.80909 5.81818 4.80909C6.34545 4.80909 6.77273 5.23636 6.77273 5.76364C6.77273 6.29091 6.34545 6.71818 5.81818 6.71818ZM13.4545 13.0909H12V10.3182C12 9.68182 12 8.86364 11.1364 8.86364C10.2727 8.86364 10.1364 9.54545 10.1364 10.2727V13.0909H8.68182V7.36364H10.0909V8.13636H10.1091C10.3182 7.75909 10.8636 7.36364 11.6364 7.36364C13.1364 7.36364 13.4545 8.36364 13.4545 9.68182V13.0909Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              data-wow-delay=".15s"
+            >
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img
+                  src="https://via.placeholder.com/120/3B82F6/FFFFFF?text=JS"
+                  alt="team image"
+                  class="h-[120px] w-[120px] rounded-full"
+                />
+                <span
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
+                ></span>
+              </div>
+              <div class="text-center">
+                <h4
+                  class="mb-1 text-lg font-semibold text-dark dark:text-white"
+                >
+                  Jane Smith
+                </h4>
+                <p class="mb-5 text-sm text-body-color dark:text-dark-6">CTO</p>
+                <div class="flex items-center justify-center gap-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M16.4647 4.83752C16.565 4.72065 16.4343 4.56793 16.2859 4.62263C15.9549 4.74474 15.6523 4.82528 15.2049 4.875C15.7552 4.56855 16.0112 4.13054 16.2194 3.59407C16.2696 3.46467 16.1182 3.34725 15.9877 3.40907C15.458 3.66023 14.8864 3.84658 14.2854 3.95668C13.6913 3.3679 12.8445 3 11.9077 3C10.1089 3 8.65027 4.35658 8.65027 6.02938C8.65027 6.26686 8.67937 6.49818 8.73427 6.71966C6.14854 6.59919 3.84286 5.49307 2.24098 3.79696C2.13119 3.68071 1.93197 3.69614 1.86361 3.83792C1.68124 4.21619 1.57957 4.63582 1.57957 5.07762C1.57957 6.12843 2.15446 7.05557 3.02837 7.59885C2.63653 7.58707 2.2618 7.51073 1.91647 7.38116C1.74834 7.31808 1.5556 7.42893 1.57819 7.59847C1.75162 8.9004 2.80568 9.97447 4.16624 10.2283C3.89302 10.2978 3.60524 10.3347 3.30754 10.3347C3.23536 10.3347 3.16381 10.3324 3.0929 10.3281C2.91247 10.3169 2.76583 10.4783 2.84319 10.6328C3.35357 11.6514 4.45563 12.3625 5.73809 12.3847C4.62337 13.1974 3.21889 13.6816 1.69269 13.6816C1.50451 13.6816 1.42378 13.9235 1.59073 14.0056C2.88015 14.6394 4.34854 15 5.90878 15C11.9005 15 15.1765 10.384 15.1765 6.38067C15.1765 6.24963 15.1732 6.11858 15.1672 5.98877C15.6535 5.66205 16.0907 5.27354 16.4647 4.83752Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M13.9092 3H4.63636C3.73309 3 3 3.73309 3 4.63636V13.9092C3 14.8125 3.73309 15.5456 4.63636 15.5456H13.9092C14.8125 15.5456 15.5456 14.8125 15.5456 13.9092V4.63636C15.5456 3.73309 14.8125 3 13.9092 3ZM6.54545 13.0909H5.09091V7.36364H6.54545V13.0909ZM5.81818 6.71818C5.29091 6.71818 4.86364 6.29091 4.86364 5.76364C4.86364 5.23636 5.29091 4.80909 5.81818 4.80909C6.34545 4.80909 6.77273 5.23636 6.77273 5.76364C6.77273 6.29091 6.34545 6.71818 5.81818 6.71818ZM13.4545 13.0909H12V10.3182C12 9.68182 12 8.86364 11.1364 8.86364C10.2727 8.86364 10.1364 9.54545 10.1364 10.2727V13.0909H8.68182V7.36364H10.0909V8.13636H10.1091C10.3182 7.75909 10.8636 7.36364 11.6364 7.36364C13.1364 7.36364 13.4545 8.36364 13.4545 9.68182V13.0909Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div
+              class="wow fadeInUp group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              data-wow-delay=".2s"
+            >
+              <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                <img
+                  src="https://via.placeholder.com/120/8B5CF6/FFFFFF?text=MB"
+                  alt="team image"
+                  class="h-[120px] w-[120px] rounded-full"
+                />
+                <span
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
+                ></span>
+              </div>
+              <div class="text-center">
+                <h4
+                  class="mb-1 text-lg font-semibold text-dark dark:text-white"
+                >
+                  Mike Brown
+                </h4>
+                <p class="mb-5 text-sm text-body-color dark:text-dark-6">
+                  Lead Developer
+                </p>
+                <div class="flex items-center justify-center gap-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M16.4647 4.83752C16.565 4.72065 16.4343 4.56793 16.2859 4.62263C15.9549 4.74474 15.6523 4.82528 15.2049 4.875C15.7552 4.56855 16.0112 4.13054 16.2194 3.59407C16.2696 3.46467 16.1182 3.34725 15.9877 3.40907C15.458 3.66023 14.8864 3.84658 14.2854 3.95668C13.6913 3.3679 12.8445 3 11.9077 3C10.1089 3 8.65027 4.35658 8.65027 6.02938C8.65027 6.26686 8.67937 6.49818 8.73427 6.71966C6.14854 6.59919 3.84286 5.49307 2.24098 3.79696C2.13119 3.68071 1.93197 3.69614 1.86361 3.83792C1.68124 4.21619 1.57957 4.63582 1.57957 5.07762C1.57957 6.12843 2.15446 7.05557 3.02837 7.59885C2.63653 7.58707 2.2618 7.51073 1.91647 7.38116C1.74834 7.31808 1.5556 7.42893 1.57819 7.59847C1.75162 8.9004 2.80568 9.97447 4.16624 10.2283C3.89302 10.2978 3.60524 10.3347 3.30754 10.3347C3.23536 10.3347 3.16381 10.3324 3.0929 10.3281C2.91247 10.3169 2.76583 10.4783 2.84319 10.6328C3.35357 11.6514 4.45563 12.3625 5.73809 12.3847C4.62337 13.1974 3.21889 13.6816 1.69269 13.6816C1.50451 13.6816 1.42378 13.9235 1.59073 14.0056C2.88015 14.6394 4.34854 15 5.90878 15C11.9005 15 15.1765 10.384 15.1765 6.38067C15.1765 6.24963 15.1732 6.11858 15.1672 5.98877C15.6535 5.66205 16.0907 5.27354 16.4647 4.83752Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark-6 hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current"
+                    >
+                      <path
+                        d="M13.9092 3H4.63636C3.73309 3 3 3.73309 3 4.63636V13.9092C3 14.8125 3.73309 15.5456 4.63636 15.5456H13.9092C14.8125 15.5456 15.5456 14.8125 15.5456 13.9092V4.63636C15.5456 3.73309 14.8125 3 13.9092 3ZM6.54545 13.0909H5.09091V7.36364H6.54545V13.0909ZM5.81818 6.71818C5.29091 6.71818 4.86364 6.29091 4.86364 5.76364C4.86364 5.23636 5.29091 4.80909 5.81818 4.80909C6.34545 4.80909 6.77273 5.23636 6.77273 5.76364C6.77273 6.29091 6.34545 6.71818 5.81818 6.71818ZM13.4545 13.0909H12V10.3182C12 9.68182 12 8.86364 11.1364 8.86364C10.2727 8.86364 10.1364 9.54545 10.1364 10.2727V13.0909H8.68182V7.36364H10.0909V8.13636H10.1091C10.3182 7.75909 10.8636 7.36364 11.6364 7.36364C13.1364 7.36364 13.4545 8.36364 13.4545 9.68182V13.0909Z"
+                        fill=""
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Team Section End ====== -->
+
+    <!-- ====== Contact Section Start ====== -->
+    <section id="contact" class="relative py-20 md:py-[120px]">
+      <div class="container px-4 mx-auto">
+        <div class="-mx-4 flex flex-wrap lg:justify-between">
+          <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
+            <div class="mb-12 max-w-[570px] lg:mb-0">
+              <span class="block mb-4 text-base font-semibold text-primary"
+                >Contact Us</span
+              >
+              <h2
+                class="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+              >
+                GET IN TOUCH WITH US
+              </h2>
+              <p
+                class="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6"
+              >
+                Have questions about NetZeroSync? Our team is ready to help you.
+              </p>
+              <div class="mb-8 flex w-full max-w-[370px]">
+                <div
+                  class="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M28 4H4C2.9 4 2 4.9 2 6V26C2 27.1 2.9 28 4 28H28C29.1 28 30 27.1 30 26V6C30 4.9 29.1 4 28 4ZM26 8L16 15L6 8V6L16 13L26 6V8Z"
+                    />
+                  </svg>
+                </div>
+                <div class="w-full">
+                  <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                    Email Address
+                  </h4>
+                  <p class="text-base text-body-color dark:text-dark-6">
+                    info@netzerosync.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div
+              class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12"
+            >
+              <form>
+                <div class="mb-6">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                  />
+                </div>
+                <div class="mb-6">
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                  />
+                </div>
+                <div class="mb-6">
+                  <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    class="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                  ></textarea>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="w-full p-3 text-base font-medium text-white transition border rounded-md cursor-pointer border-primary bg-primary hover:bg-opacity-90"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact Section End ====== -->
+
+    <!-- ====== Footer Section Start ====== -->
+    <footer
+      class="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
+      data-wow-delay=".15s"
+    >
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div class="w-full mb-10">
+              <a
+                href="javascript:void(0)"
+                class="mb-6 inline-block max-w-[160px]"
+              >
+                <!-- LOGO FOOTER DIGANTI -->
+                <img
+                  src="assets/images/logo/image2vector.svg"
+                  alt="NetZeroSync"
+                  style="max-height: 50px; filter: brightness(0) invert(1)"
+                />
+              </a>
+              <p class="mb-8 max-w-[270px] text-base text-gray-7">
+                Building a sustainable digital future, one sync at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-[#8890A4]/40 py-8 lg:mt-[60px]">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div class="my-1">
+                <div
+                  class="flex items-center justify-center -mx-3 md:justify-start"
+                >
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    href="javascript:void(0)"
+                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
+                    >Terms of Service</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div class="flex justify-center my-1 md:justify-end">
+                <p class="text-base text-gray-7">
+                  © 2025 NetZeroSync. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer Section End ====== -->
+    <!-- ========== Sign In Modal ========== -->
+    <div
+      id="signinModal"
+      class="modal-overlay fixed inset-0 z-[9999] hidden bg-black/50 backdrop-blur-sm"
+    >
+      <div class="flex items-center justify-center min-h-screen px-4 py-8">
+        <div
+          class="modal-content relative w-full max-w-[480px] bg-white dark:bg-dark-2 rounded-2xl shadow-2xl p-8 transform transition-all"
+        >
+          <button
+            onclick="closeSignin()"
+            class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-white transition"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div class="mb-8 text-center">
+            <img
+              src="assets/images/logo/image2vector.svg"
+              alt="NetZeroSync"
+              class="mx-auto h-12 mb-4"
+            />
+            <h2 class="text-2xl font-bold text-dark dark:text-white">
+              Welcome Back
+            </h2>
+            <p class="text-sm text-body-color dark:text-dark-6 mt-2">
+              Sign in to your NetZeroSync account
+            </p>
+          </div>
+          <form onsubmit="handleSignin(event)">
+            <div class="mb-4">
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="w-full px-4 py-3 text-base bg-transparent border rounded-lg outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary transition"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="w-full px-4 py-3 text-base bg-transparent border rounded-lg outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary transition"
+              />
+            </div>
+            <div class="flex items-center justify-between mb-6">
+              <label class="flex items-center">
+                <input
+                  type="checkbox"
+                  class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
+                />
+                <span class="ml-2 text-sm text-body-color dark:text-dark-6"
+                  >Remember me</span
+                >
+              </label>
+              <a href="#" class="text-sm text-primary hover:underline"
+                >Forgot password?</a
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full px-5 py-3 text-base font-medium text-white transition duration-300 rounded-lg bg-primary hover:bg-secondary"
+            >
+              Sign In
+            </button>
+          </form>
+          <div class="relative my-6">
+            <div class="absolute inset-0 flex items-center">
+              <div
+                class="w-full border-t border-stroke dark:border-dark-3"
+              ></div>
+            </div>
+            <div class="relative flex justify-center text-sm">
+              <span
+                class="px-3 bg-white dark:bg-dark-2 text-body-color dark:text-dark-6"
+                >Or continue with</span
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-3 mb-6">
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  fill="#4267B2"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  fill="#EA4335"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#4285F4"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-center text-sm text-body-color dark:text-dark-6">
+            Don't have an account?
+            <a
+              href="#"
+              onclick="switchToSignup(event)"
+              class="text-primary hover:underline font-medium"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Sign Up Modal ========== -->
+    <div
+      id="signupModal"
+      class="modal-overlay fixed inset-0 z-[9999] hidden bg-black/50 backdrop-blur-sm"
+    >
+      <div class="flex items-center justify-center min-h-screen px-4 py-8">
+        <div
+          class="modal-content relative w-full max-w-[480px] bg-white dark:bg-dark-2 rounded-2xl shadow-2xl p-8 transform transition-all"
+        >
+          <button
+            onclick="closeSignup()"
+            class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-white transition"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <div class="mb-8 text-center">
+            <img
+              src="assets/images/logo/image2vector.svg"
+              alt="NetZeroSync"
+              class="mx-auto h-12 mb-4"
+            />
+            <h2 class="text-2xl font-bold text-dark dark:text-white">
+              Create Account
+            </h2>
+            <p class="text-sm text-body-color dark:text-dark-6 mt-2">
+              Join NetZeroSync for sustainable cloud storage
+            </p>
+          </div>
+          <form onsubmit="handleSignup(event)">
+            <div class="mb-4">
+              <input
+                type="text"
+                placeholder="Full Name"
+                required
+                class="w-full px-4 py-3 text-base bg-transparent border rounded-lg outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary transition"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="w-full px-4 py-3 text-base bg-transparent border rounded-lg outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary transition"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                class="w-full px-4 py-3 text-base bg-transparent border rounded-lg outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary transition"
+              />
+            </div>
+            <div class="flex items-start mb-6">
+              <input
+                type="checkbox"
+                required
+                class="w-4 h-4 mt-1 text-primary border-gray-300 rounded focus:ring-primary"
+              />
+              <label class="ml-2 text-sm text-body-color dark:text-dark-6"
+                >I agree to the
+                <a href="#" class="text-primary hover:underline"
+                  >Terms of Service</a
+                >
+                and
+                <a href="#" class="text-primary hover:underline"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full px-5 py-3 text-base font-medium text-white transition duration-300 rounded-lg bg-primary hover:bg-secondary"
+            >
+              Create Account
+            </button>
+          </form>
+          <div class="relative my-6">
+            <div class="absolute inset-0 flex items-center">
+              <div
+                class="w-full border-t border-stroke dark:border-dark-3"
+              ></div>
+            </div>
+            <div class="relative flex justify-center text-sm">
+              <span
+                class="px-3 bg-white dark:bg-dark-2 text-body-color dark:text-dark-6"
+                >Or continue with</span
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-3 mb-6">
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  fill="#4267B2"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  fill="#EA4335"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#4285F4"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center p-3 border border-stroke dark:border-dark-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-3 transition"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p class="text-center text-sm text-body-color dark:text-dark-6">
+            Already have an account?
+            <a
+              href="#"
+              onclick="switchToSignin(event)"
+              class="text-primary hover:underline font-medium"
+              >Sign In</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <script>
+      // ===== Theme Switcher (PRIORITAS PERTAMA) =====
+      (function () {
+        const themeSwitcher = document.getElementById("themeSwitcher");
+        const htmlElement = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem("theme") || "light";
+
+        // Apply theme on page load
+        if (savedTheme === "dark") {
+          htmlElement.classList.add("dark");
+        }
+
+        // Toggle function
+        function toggleTheme() {
+          if (htmlElement.classList.contains("dark")) {
+            htmlElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+            console.log("✅ Switched to Light Mode");
+          } else {
+            htmlElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            console.log("✅ Switched to Dark Mode");
+          }
+        }
+
+        // Add event listener
+        if (themeSwitcher) {
+          themeSwitcher.addEventListener("click", toggleTheme);
+          console.log("🎨 Theme Switcher Ready!");
+        } else {
+          console.error("❌ Theme Switcher button not found!");
+        }
+      })();
+
+      // ===== Sticky Navbar =====
+      window.onscroll = function () {
+        const ud_header = document.querySelector(".ud-header");
+        const sticky = ud_header.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+          ud_header.classList.add("sticky");
+        } else {
+          ud_header.classList.remove("sticky");
+        }
+
+        // Show/hide back-to-top button
+        const backToTop = document.querySelector(".back-to-top");
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      };
+
+      // ===== Mobile Menu Toggle =====
+      const navbarToggler = document.querySelector("#navbarToggler");
+      const navbarCollapse = document.querySelector("#navbarCollapse");
+
+      navbarToggler.addEventListener("click", () => {
+        navbarToggler.classList.toggle("navbarTogglerActive");
+        navbarCollapse.classList.toggle("hidden");
+      });
+
+      // Close navbar when clicking menu item
+      document
+        .querySelectorAll("#navbarCollapse ul li:not(.submenu-item) a")
+        .forEach((e) =>
+          e.addEventListener("click", () => {
+            navbarToggler.classList.remove("navbarTogglerActive");
+            navbarCollapse.classList.add("hidden");
+          })
+        );
+
+      // ===== Smooth Scroll for Menu =====
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      });
+
+      // ===== Section Menu Active on Scroll =====
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelectorAll(".ud-menu-scroll")
+              .forEach((link) => link.classList.remove("active"));
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+
+      // ===== Back to Top Smooth Scroll =====
+      function scrollTo(element, to = 0, duration = 500) {
+        const start = element.scrollTop;
+        const change = to - start;
+        const increment = 20;
+        let currentTime = 0;
+
+        const animateScroll = () => {
+          currentTime += increment;
+          const val = Math.easeInOutQuad(currentTime, start, change, duration);
+          element.scrollTop = val;
+          if (currentTime < duration) {
+            setTimeout(animateScroll, increment);
+          }
+        };
+        animateScroll();
+      }
+
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      document.querySelector(".back-to-top").onclick = () => {
+        scrollTo(document.documentElement);
+      };
+    </script>
+    <script>
+      // ===== Modal Functions =====
+      function openSignin(e) {
+        if (e) e.preventDefault();
+        document.getElementById("signinModal").classList.remove("hidden");
+        document.getElementById("signupModal").classList.add("hidden");
+        document.body.style.overflow = "hidden";
+      }
+      function closeSignin() {
+        document.getElementById("signinModal").classList.add("hidden");
+        document.body.style.overflow = "";
+      }
+      function openSignup(e) {
+        if (e) e.preventDefault();
+        document.getElementById("signupModal").classList.remove("hidden");
+        document.getElementById("signinModal").classList.add("hidden");
+        document.body.style.overflow = "hidden";
+      }
+      function closeSignup() {
+        document.getElementById("signupModal").classList.add("hidden");
+        document.body.style.overflow = "";
+      }
+      function switchToSignup(e) {
+        e.preventDefault();
+        closeSignin();
+        setTimeout(() => openSignup(), 150);
+      }
+      function switchToSignin(e) {
+        e.preventDefault();
+        closeSignup();
+        setTimeout(() => openSignin(), 150);
+      }
+      document
+        .getElementById("signinModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeSignin();
+        });
+      document
+        .getElementById("signupModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeSignup();
+        });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeSignin();
+          closeSignup();
+        }
+      });
+      function handleSignin(e) {
+        e.preventDefault();
+        alert("Sign In functionality will be implemented here!");
+      }
+      function handleSignup(e) {
+        e.preventDefault();
+        alert("Sign Up functionality will be implemented here!");
+      }
+    </script>
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

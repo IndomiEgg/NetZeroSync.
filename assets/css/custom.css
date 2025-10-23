@@ -1,0 +1,587 @@
+/* ========================================================================
+   NetZeroSync - Custom Styles
+   Clean & Organized Version
+   ======================================================================== */
+
+/* ========================================================================
+   1. CSS VARIABLES (Color Palette)
+   ======================================================================== */
+
+:root {
+  /* Light Mode - Green Theme */
+  --color-primary: #10b981; /* Bright Green */
+  --color-secondary: #059669; /* Deep Green */
+  --color-accent: #34d399; /* Light Green */
+  --color-dark: #064e3b; /* Very Dark Green */
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0fdf4;
+  --bg-accent: #d1fae5;
+  --bg-hero: linear-gradient(135deg, #10b981 0%, #059669 100%);
+
+  --text-primary: #064e3b;
+  --text-secondary: #047857;
+  --text-muted: #6b7280;
+
+  --color-white: #ffffff;
+  --color-gray-light: #f3f4f6;
+  --color-gray: #9ca3af;
+  --color-gray-dark: #4b5563;
+}
+
+.dark {
+  /* Dark Mode - Teal & Soft Green Theme */
+  --color-primary: #a0c878;
+  --color-secondary: #27667b;
+  --color-accent: #ddeb9d;
+  --color-dark: #143d60;
+
+  --bg-primary: #0f1419;
+  --bg-secondary: #143d60;
+  --bg-accent: #27667b;
+  --bg-hero: linear-gradient(135deg, #27667b 0%, #143d60 100%);
+
+  --text-primary: #ffffff;
+  --text-secondary: #ddeb9d;
+  --text-muted: #9ca3af;
+}
+
+/* ========================================================================
+   2. NAVBAR - Base Styles
+   ======================================================================== */
+
+.ud-header {
+  transition: all 0.3s ease;
+}
+
+.ud-header .container {
+  max-width: 100% !important;
+}
+
+.ud-header nav ul li,
+.ud-header nav ul li a {
+  background-color: transparent !important;
+}
+
+/* ========================================================================
+   3. NAVBAR - Transparent (Before Scroll) - LIGHT MODE
+   ======================================================================== */
+
+.ud-header:not(.sticky) .ud-menu-scroll,
+.ud-header:not(.sticky) .loginBtn,
+.ud-header:not(.sticky) .signUpBtn,
+.ud-header:not(.sticky) .ud-menu-scroll span,
+.ud-header:not(.sticky) a[class*="ud-menu-scroll"] {
+  color: #ffffff !important;
+}
+
+.ud-header:not(.sticky) .ud-menu-scroll:hover {
+  opacity: 0.8;
+}
+
+.ud-header:not(.sticky) #navbarToggler span,
+.ud-header:not(.sticky) #themeSwitcher svg {
+  background-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.ud-header:not(.sticky) #themeSwitcher {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ud-header:not(.sticky) .signUpBtn {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ud-header:not(.sticky) .signUpBtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #10b981 !important;
+}
+
+.ud-header:not(.sticky) .header-logo {
+  filter: brightness(0) invert(1) !important;
+}
+
+@media (min-width: 960px) {
+  .ud-header:not(.sticky),
+  .ud-header:not(.sticky) nav {
+    background-color: transparent !important;
+  }
+}
+
+/* ========================================================================
+   4. NAVBAR - Sticky (After Scroll) - LIGHT MODE
+   ======================================================================== */
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(16, 185, 129, 0.1) !important;
+}
+
+.sticky .ud-menu-scroll,
+.sticky .loginBtn,
+.sticky .ud-menu-scroll span,
+.sticky a[class*="ud-menu-scroll"] {
+  color: #064e3b !important;
+}
+
+.sticky .ud-menu-scroll:hover,
+.sticky .ud-menu-scroll:hover span {
+  color: #10b981 !important;
+  opacity: 1;
+}
+
+.sticky #navbarToggler span {
+  background-color: #064e3b !important;
+}
+
+.sticky #themeSwitcher {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.sticky #themeSwitcher svg {
+  color: #10b981 !important;
+}
+
+.sticky .signUpBtn {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+}
+
+.sticky .signUpBtn:hover {
+  background-color: #059669 !important;
+}
+
+.sticky .header-logo {
+  filter: none !important;
+}
+
+.sticky .ud-menu-scroll.active {
+  color: #10b981 !important;
+  opacity: 1 !important;
+  font-weight: 600;
+}
+
+/* ========================================================================
+   5. NAVBAR - Dark Mode
+   ======================================================================== */
+
+.dark .ud-header:not(.sticky) .ud-menu-scroll,
+.dark .ud-header:not(.sticky) .loginBtn,
+.dark .ud-header:not(.sticky) .signUpBtn,
+.dark .ud-header:not(.sticky) .ud-menu-scroll span {
+  color: #ffffff !important;
+}
+
+.dark .sticky {
+  background-color: rgba(15, 20, 25, 0.95) !important;
+  box-shadow: 0 2px 20px rgba(160, 200, 120, 0.1) !important;
+}
+
+.dark .sticky .ud-menu-scroll,
+.dark .sticky .loginBtn {
+  color: #ddeb9d !important;
+}
+
+.dark .sticky .ud-menu-scroll:hover {
+  color: #a0c878 !important;
+}
+
+.dark .sticky #themeSwitcher {
+  background-color: rgba(160, 200, 120, 0.2) !important;
+  border-color: rgba(160, 200, 120, 0.4) !important;
+}
+
+.dark .sticky #themeSwitcher svg {
+  color: #ddeb9d !important;
+}
+
+.dark .sticky .signUpBtn {
+  background-color: #a0c878 !important;
+  color: #143d60 !important;
+}
+
+.dark .sticky .ud-menu-scroll.active {
+  color: #ddeb9d !important;
+}
+
+/* ========================================================================
+   6. MOBILE MENU (Collapsed)
+   ======================================================================== */
+
+#navbarCollapse {
+  background-color: #ffffff !important;
+}
+
+#navbarCollapse .ud-menu-scroll {
+  color: #064e3b;
+}
+
+.dark #navbarCollapse {
+  background-color: #143d60 !important;
+}
+
+.dark #navbarCollapse .ud-menu-scroll {
+  color: #ddeb9d;
+}
+
+@media (min-width: 960px) {
+  #navbarCollapse,
+  .dark #navbarCollapse {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ========================================================================
+   7. THEME SWITCHER BUTTON
+   ======================================================================== */
+
+#themeSwitcher {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#themeSwitcher:hover {
+  transform: scale(1.1);
+}
+
+#themeSwitcher svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.dark .sun-icon {
+  display: none;
+}
+
+.moon-icon {
+  display: none;
+}
+
+.dark .moon-icon {
+  display: block;
+}
+
+.sun-icon {
+  display: block;
+}
+
+/* ========================================================================
+   8. GLOBAL COLORS & BACKGROUNDS
+   ======================================================================== */
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.bg-primary {
+  background: var(--bg-hero) !important;
+}
+
+.bg-gray-1 {
+  background-color: var(--bg-secondary) !important;
+}
+
+.dark .bg-white {
+  background-color: var(--bg-secondary) !important;
+}
+
+.dark .bg-gray-1 {
+  background-color: #1a1a2e !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.dark .text-primary {
+  color: var(--color-accent) !important;
+}
+
+/* ========================================================================
+   9. BUTTONS
+   ======================================================================== */
+
+.btn-primary,
+button[type="submit"],
+a[class*="bg-primary"] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.dark .btn-primary {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.dark .btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.back-to-top {
+  background-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-5px);
+}
+
+/* ========================================================================
+   10. CARDS & SHADOWS
+   ======================================================================== */
+
+.shadow-pricing,
+.shadow-testimonial {
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15);
+}
+
+.dark .shadow-pricing,
+.dark .shadow-testimonial {
+  box-shadow: 0 4px 20px rgba(160, 200, 120, 0.1);
+}
+
+.pricing-card {
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.2);
+}
+
+.dark .pricing-card:hover {
+  box-shadow: 0 10px 40px rgba(160, 200, 120, 0.15);
+}
+
+/* ========================================================================
+   11. FEATURE ICONS & GRADIENTS
+   ======================================================================== */
+
+.feature-icon,
+[class*="bg-primary/"] {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+}
+
+.dark .feature-icon {
+  background: linear-gradient(135deg, #27667b 0%, #a0c878 100%);
+}
+
+/* ========================================================================
+   12. FOOTER
+   ======================================================================== */
+
+footer {
+  background: linear-gradient(135deg, #064e3b 0%, #022c22 100%) !important;
+}
+
+.dark footer {
+  background: linear-gradient(135deg, #143d60 0%, #0f1419 100%) !important;
+}
+
+/* ========================================================================
+   13. LINKS
+   ======================================================================== */
+
+a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+.dark a {
+  color: var(--color-accent);
+}
+
+.dark a:hover {
+  color: var(--color-secondary);
+}
+
+/* ========================================================================
+   14. FORM INPUTS
+   ======================================================================== */
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-primary) !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: var(--color-secondary) !important;
+  box-shadow: 0 0 0 3px rgba(160, 200, 120, 0.1);
+}
+
+/* ========================================================================
+   15. SMOOTH TRANSITIONS
+   ======================================================================== */
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ========================================================================
+   16. ACTIVE MENU ITEMS
+   ======================================================================== */
+
+.ud-menu-scroll.active {
+  opacity: 1 !important;
+  font-weight: 600;
+}
+/* ========================================================================
+   17. FIX SPECIFIC ISSUES
+   ======================================================================== */
+
+/* FIX 1: Theme Switcher Icon di Light Mode - Remove Background Color */
+.ud-header:not(.sticky) #themeSwitcher svg {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.ud-header:not(.sticky) #navbarToggler span {
+  background-color: #ffffff !important;
+  color: transparent !important;
+}
+
+/* FIX 2: Theme Switcher Icon di Dark Mode - Visible */
+.dark #themeSwitcher {
+  background-color: rgba(160, 200, 120, 0.2) !important;
+  border-color: rgba(160, 200, 120, 0.4) !important;
+}
+
+.dark #themeSwitcher svg {
+  color: #ddeb9d !important;
+}
+
+.dark .sticky #themeSwitcher svg {
+  color: #ddeb9d !important;
+}
+
+/* FIX 3: Learn More Button di Hero Section - White Background with Green Text */
+.hero-content a[href="#"]:not([class*="bg-white"]) {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-content a[href="#"]:not([class*="bg-white"]):hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  color: #10b981 !important;
+}
+
+/* Get Started button (yang putih solid) tetap putih */
+.hero-content a[class*="bg-white"] {
+  background-color: #ffffff !important;
+  color: #064e3b !important;
+}
+
+.hero-content a[class*="bg-white"]:hover {
+  background-color: #f0fdf4 !important;
+  color: #10b981 !important;
+}
+
+/* Dark mode hero buttons */
+.dark .hero-content a[href="#"]:not([class*="bg-white"]) {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+.dark .hero-content a[href="#"]:not([class*="bg-white"]):hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  color: #143d60 !important;
+}
+
+.dark .hero-content a[class*="bg-white"] {
+  background-color: #a0c878 !important;
+  color: #143d60 !important;
+}
+
+.dark .hero-content a[class*="bg-white"]:hover {
+  background-color: #ddeb9d !important;
+  color: #143d60 !important;
+}
+
+/* ========================================================================
+   18. FIX DARK MODE THEME SWITCHER ICON
+   ======================================================================== */
+
+/* Dark mode - FORCE WHITE/LIGHT COLOR pada icon */
+.dark #themeSwitcher {
+  background-color: rgba(160, 200, 120, 0.2) !important;
+  border-color: rgba(160, 200, 120, 0.4) !important;
+}
+
+.dark #themeSwitcher svg {
+  color: #ddeb9d !important;
+  fill: none !important;
+  stroke: #ddeb9d !important;
+  stroke-width: 2;
+}
+
+.dark .ud-header:not(.sticky) #themeSwitcher svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.dark .sticky #themeSwitcher svg {
+  color: #ddeb9d !important;
+  stroke: #ddeb9d !important;
+}
+
+/* Pastikan moon icon visible di dark mode */
+.dark .moon-icon {
+  display: block !important;
+  color: #ddeb9d !important;
+  stroke: #ddeb9d !important;
+}
+
+.dark .sun-icon {
+  display: none !important;
+}
+
+/* Light mode sun icon */
+.sun-icon {
+  display: block !important;
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.moon-icon {
+  display: none !important;
+}
+
+/* Sticky navbar di dark mode */
+.dark.sticky #themeSwitcher svg {
+  color: #ddeb9d !important;
+  stroke: #ddeb9d !important;
+}
