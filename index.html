@@ -37,7 +37,7 @@
                 src="assets/images/logo/image2vector.svg"
                 alt="NetZeroSync"
                 class="w-full header-logo"
-                style="max-height: 50px; filter: brightness(0) invert(1)"
+                style="max-height: 50px"
               />
             </a>
           </div>
@@ -323,7 +323,7 @@
                     class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]"
                   >
                     <img
-                      src="https://via.placeholder.com/300x500/10B981/FFFFFF?text=Green+Tech"
+                      src="assets/images/about/about1.jpg"
                       alt="about image"
                       class="object-cover object-center w-full h-full"
                     />
@@ -334,7 +334,7 @@
                     class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]"
                   >
                     <img
-                      src="https://via.placeholder.com/300x310/3B82F6/FFFFFF?text=Cloud+Sync"
+                      src="assets/images/about/about2.jpg"
                       alt="about image"
                       class="object-cover object-center w-full h-full"
                     />
@@ -1054,7 +1054,7 @@
                 <img
                   src="assets/images/logo/image2vector.svg"
                   alt="NetZeroSync"
-                  style="max-height: 50px; filter: brightness(0) invert(1)"
+                  style="max-height: 50px"
                 />
               </a>
               <p class="mb-8 max-w-[270px] text-base text-gray-7">
@@ -1419,153 +1419,59 @@
     </script>
 
     <script>
-      // ===== Theme Switcher (PRIORITAS PERTAMA) =====
+      // ===== Theme Switcher (FIXED VERSION) =====
       (function () {
         const themeSwitcher = document.getElementById("themeSwitcher");
         const htmlElement = document.documentElement;
+        const sunIcon = document.querySelector(".sun-icon");
+        const moonIcon = document.querySelector(".moon-icon");
 
-        // Load saved theme
-        const savedTheme = localStorage.getItem("theme") || "light";
-
-        // Apply theme on page load
-        if (savedTheme === "dark") {
-          htmlElement.classList.add("dark");
+        // Get initial theme (DEFAULT: light)
+        function getInitialTheme() {
+          const savedTheme = localStorage.getItem("theme");
+          if (savedTheme) {
+            return savedTheme;
+          }
+          // ALWAYS START WITH LIGHT MODE (no auto dark mode)
+          return "light";
         }
 
-        // Toggle function
-        function toggleTheme() {
-          if (htmlElement.classList.contains("dark")) {
-            htmlElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            console.log("✅ Switched to Light Mode");
-          } else {
+        // Apply theme
+        function applyTheme(theme) {
+          if (theme === "dark") {
             htmlElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-            console.log("✅ Switched to Dark Mode");
+            if (sunIcon) sunIcon.style.display = "none";
+            if (moonIcon) moonIcon.style.display = "block";
+          } else {
+            htmlElement.classList.remove("dark");
+            if (sunIcon) sunIcon.style.display = "block";
+            if (moonIcon) moonIcon.style.display = "none";
           }
         }
 
-        // Add event listener
+        // Initialize on page load
+        const initialTheme = getInitialTheme();
+        applyTheme(initialTheme);
+
+        // Toggle theme
+        function toggleTheme() {
+          const currentTheme = htmlElement.classList.contains("dark")
+            ? "dark"
+            : "light";
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          applyTheme(newTheme);
+          localStorage.setItem("theme", newTheme);
+
+          console.log("✅ Theme switched to:", newTheme);
+        }
+
+        // Add click event
         if (themeSwitcher) {
           themeSwitcher.addEventListener("click", toggleTheme);
           console.log("🎨 Theme Switcher Ready!");
-        } else {
-          console.error("❌ Theme Switcher button not found!");
         }
       })();
-
-      // ===== Sticky Navbar =====
-      window.onscroll = function () {
-        const ud_header = document.querySelector(".ud-header");
-        const sticky = ud_header.offsetTop;
-
-        if (window.pageYOffset > sticky) {
-          ud_header.classList.add("sticky");
-        } else {
-          ud_header.classList.remove("sticky");
-        }
-
-        // Show/hide back-to-top button
-        const backToTop = document.querySelector(".back-to-top");
-        if (
-          document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50
-        ) {
-          backToTop.style.display = "flex";
-        } else {
-          backToTop.style.display = "none";
-        }
-      };
-
-      // ===== Mobile Menu Toggle =====
-      const navbarToggler = document.querySelector("#navbarToggler");
-      const navbarCollapse = document.querySelector("#navbarCollapse");
-
-      navbarToggler.addEventListener("click", () => {
-        navbarToggler.classList.toggle("navbarTogglerActive");
-        navbarCollapse.classList.toggle("hidden");
-      });
-
-      // Close navbar when clicking menu item
-      document
-        .querySelectorAll("#navbarCollapse ul li:not(.submenu-item) a")
-        .forEach((e) =>
-          e.addEventListener("click", () => {
-            navbarToggler.classList.remove("navbarTogglerActive");
-            navbarCollapse.classList.add("hidden");
-          })
-        );
-
-      // ===== Smooth Scroll for Menu =====
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        });
-      });
-
-      // ===== Section Menu Active on Scroll =====
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
-
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelectorAll(".ud-menu-scroll")
-              .forEach((link) => link.classList.remove("active"));
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-
-      // ===== Back to Top Smooth Scroll =====
-      function scrollTo(element, to = 0, duration = 500) {
-        const start = element.scrollTop;
-        const change = to - start;
-        const increment = 20;
-        let currentTime = 0;
-
-        const animateScroll = () => {
-          currentTime += increment;
-          const val = Math.easeInOutQuad(currentTime, start, change, duration);
-          element.scrollTop = val;
-          if (currentTime < duration) {
-            setTimeout(animateScroll, increment);
-          }
-        };
-        animateScroll();
-      }
-
-      Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      };
-
-      document.querySelector(".back-to-top").onclick = () => {
-        scrollTo(document.documentElement);
-      };
     </script>
     <script>
       // ===== Modal Functions =====
